@@ -3,7 +3,7 @@ from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
 
 
-def viz(x, y, model, var_1, var_2):
+def viz(x, y, model, var_1, var_2, name=None):
     fig = plt.figure()
     ax = plt.axes()
 
@@ -36,5 +36,6 @@ def viz(x, y, model, var_1, var_2):
                     label=cl)
 
     plt.tight_layout()
-
+    if name:
+        plt.savefig('{}.png'.format(name))
     plt.show()

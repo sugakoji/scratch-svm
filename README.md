@@ -2,6 +2,12 @@
 
 svmをスクラッチで実装
 
+最適化手法はpegasosアルゴリズムというのをしよう。
+
+- 参考論文
+
+Pegasos: Primal Estimated sub-GrAdient SOlver for SVM Shai
+
 
 # ハードマージンSVM
 
